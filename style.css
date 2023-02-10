@@ -1,0 +1,62 @@
+body {
+	background-color: #eaeaea;
+}
+
+.container {
+	position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  display: grid;
+	grid-template-columns: repeat(3 , 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 7px;
+	background-color: #323232;
+}
+
+.container .faild {
+	display: block;
+	width: 100%;
+	background-color: #eaeaea;
+	color: #323232;
+	font-size: 130px;
+	font-family: system-ui;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.stopPlaying {
+	position: absolute;
+	left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+	z-index: 0;
+}
+
+.turns {
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	color: #323232;
+	font-family: system-ui;
+	font-weight: bold;
+}
+
+.restartBtn {
+	position: absolute;
+	bottom: -5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	color: #323232;
+	font-family: system-ui;
+	font-weight: bold;
+}
